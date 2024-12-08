@@ -29,8 +29,9 @@ class MyWidget(QMainWindow):
         self.update()
 
     def draw_ellipse(self, qp):
-        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
-        qp.drawEllipse(QPointF(500, 300), 75, 75)
+        qp.setBrush(QColor(255, 255, 0))
+        r = randint(10, 100)
+        qp.drawEllipse(QPointF(500, 300), r, r)
 
 
 def except_hook(cls, exception, traceback):
